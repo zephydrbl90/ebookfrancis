@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editTextBookTitle" type="id"/>
+    <item name="editTextPrice" type="id"/>
+    <item name="buttonPurchase" type="id"/>
+    <item name="bookTitle" type="id"/>
+    <item name="bookAuthor" type="id"/>
+    <item name="recyclerView" type="id"/>
+    <item name="admin_checkbox" type="id" />
+    <item name="code" type="id" />
+</resources>

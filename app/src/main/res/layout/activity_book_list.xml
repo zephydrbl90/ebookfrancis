@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Eighty-Six Section -->
+        <TextView
+            android:id="@+id/bookEightySixTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eighty-Six"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:contentDescription="Eighty-Six book title" />
+
+        <TextView
+            android:id="@+id/bookEightySixDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="in the series 86 -Eighty Six, the protagonist is a young man or woman who is a member of the Eighty-Sixth Sector, a forsaken land beyond the fortified walls of the Republic territories. The Eighty-Six are branded and stripped of their humanity, and are forced to pilot unmanned weapons into battle"
+            android:textSize="16sp"
+            android:paddingBottom="4dp"
+            android:contentDescription="Description of the book Eighty-Six" />
+
+        <TextView
+            android:id="@+id/bookEightySixPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: $15"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:contentDescription="Price of the book Eighty-Six" />
+
+        <TextView
+            android:id="@+id/bookEightySixQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"
+            android:contentDescription="Eighty-Six book quantity. Current value is 0." />
+
+        <ImageButton
+            android:id="@+id/buttonMinusEightySix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_minus"
+            android:contentDescription="Decrease quantity of book Eighty-Six" />
+
+        <ImageButton
+            android:id="@+id/buttonPlusEightySix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_plus"
+            android:contentDescription="Increase quantity of book Eighty-Six" />
+
+        <!-- Harry Potter Section -->
+        <TextView
+            android:id="@+id/bookHarryPotterTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harry Potter"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:contentDescription="Harry Potter book title" />
+
+        <TextView
+            android:id="@+id/bookHarryPotterDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The novels follow Harry Potter, an 11-year-old boy who discovers he is the son of famous wizards and will attend Hogwarts School of Witchcraft and Wizardry. Harry learns of an entire society of wizards and witches. He befriends several Hogwarts students and teachers along his journey"
+            android:textSize="16sp"
+            android:paddingBottom="4dp"
+            android:contentDescription="Description of the book Harry Potter" />
+
+        <TextView
+            android:id="@+id/bookHarryPotterPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: $20"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:contentDescription="Price of the book Harry Potter" />
+
+        <TextView
+            android:id="@+id/bookHarryPotterQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"
+            android:contentDescription="Harry Potter book quantity. Current value is 0." />
+
+        <ImageButton
+            android:id="@+id/buttonMinusHarryPotter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_minus"
+            android:contentDescription="Decrease quantity of book Harry Potter" />
+
+        <ImageButton
+            android:id="@+id/buttonPlusHarryPotter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_plus"
+            android:contentDescription="Increase quantity of book Harry Potter" />
+
+        <!-- Purchase Button -->
+        <Button
+            android:id="@+id/purchaseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purchase"
+            android:layout_marginTop="24dp"
+            android:contentDescription="Confirm purchase of all selected items." />
+    </LinearLayout>
+</ScrollView>

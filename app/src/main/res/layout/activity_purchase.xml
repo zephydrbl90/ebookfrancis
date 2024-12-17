@@ -1,0 +1,213 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Section for Eighty-Six -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <!-- Book Cover Image -->
+            <ImageView
+                android:id="@+id/eightySixCover"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Eighty-Six Cover"
+                android:src="@drawable/img_1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/eightySixTitle"
+                android:layout_marginEnd="16dp" />  <!-- Fixed here -->
+
+            <!-- Book Title -->
+            <TextView
+                android:id="@+id/eightySixTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Eighty-Six"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/eightySixCover"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Book Description -->
+            <TextView
+                android:id="@+id/eightySixDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="A thrilling story of a boy who is a soldier."
+                android:textSize="14sp"
+                android:textColor="#666"
+                app:layout_constraintTop_toBottomOf="@+id/eightySixTitle"
+                app:layout_constraintStart_toEndOf="@+id/eightySixCover"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Strengths Section -->
+            <TextView
+                android:id="@+id/eightySixStrengthsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strengths"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/eightySixCover"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/eightySixStrengths"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="- Exciting and gripping story\n- Relatable characters\n- Strong world-building"
+                android:textSize="14sp"
+                android:textColor="#333"
+                app:layout_constraintTop_toBottomOf="@+id/eightySixStrengthsLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Weaknesses Section -->
+            <TextView
+                android:id="@+id/eightySixWeaknessesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weaknesses"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/eightySixStrengths"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/eightySixWeaknesses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="- Some pacing issues\n- Minor plot holes"
+                android:textSize="14sp"
+                android:textColor="#333"
+                app:layout_constraintTop_toBottomOf="@+id/eightySixWeaknessesLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Section for Harry Potter -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="4dp"
+            tools:ignore="ExtraText">
+
+            <!-- Book Cover Image -->
+            <ImageView
+                android:id="@+id/harryPotterCover"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:contentDescription="Harry Potter Cover"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_2"
+                android:layout_marginEnd="16dp"
+                tools:ignore="MissingConstraints" />  <!-- Fixed here -->
+            app:layout_constraintEnd_toStartOf="@+id/harryPotterTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!-- Book Title -->
+            <TextView
+                android:id="@+id/harryPotterTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Harry Potter"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/harryPotterCover"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Book Description -->
+            <TextView
+                android:id="@+id/harryPotterDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="A boy with a mighty interest in magic who goes to an academy to learn more."
+                android:textSize="14sp"
+                android:textColor="#666"
+                app:layout_constraintTop_toBottomOf="@+id/harryPotterTitle"
+                app:layout_constraintStart_toEndOf="@+id/harryPotterCover"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Strengths Section -->
+            <TextView
+                android:id="@+id/harryPotterStrengthsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strengths"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/harryPotterCover"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/harryPotterStrengths"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="- Imaginative magical world\n- Engaging characters\n- Timeless themes"
+                android:textSize="14sp"
+                android:textColor="#333"
+                app:layout_constraintTop_toBottomOf="@+id/harryPotterStrengthsLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Weaknesses Section -->
+            <TextView
+                android:id="@+id/harryPotterWeaknessesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weaknesses"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/harryPotterStrengths"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/harryPotterWeaknesses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="- Overly familiar tropes in places\n- Some parts are slow-paced"
+                android:textSize="14sp"
+                android:textColor="#333"
+                app:layout_constraintTop_toBottomOf="@+id/harryPotterWeaknessesLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/lightLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battery Level and Brightness Info"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textStyle="bold" />
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:padding="8dp" />
+
+        <!-- Status Input -->
+        <EditText
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Status"
+            android:padding="8dp" />
+
+        <!-- Button to Select Genres -->
+        <Button
+            android:id="@+id/btn_select_genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Genres"
+            android:padding="8dp" />
+
+        <!-- Selected Genres Display -->
+        <TextView
+            android:id="@+id/selected_genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Genres: None"
+            android:padding="8dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Button to Take Picture -->
+        <Button
+            android:id="@+id/btn_take_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Picture"
+            android:padding="8dp" />
+
+        <!-- ImageView for Profile Picture -->
+        <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="Profile Picture"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:padding="8dp" />
+
+        <!-- Saved Profile Section (Displays after saving the profile) -->
+        <TextView
+            android:id="@+id/saved_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/saved_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/saved_genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genres: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/saved_profile_picture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="Saved Profile Picture"
+            android:padding="8dp" />
+    </LinearLayout>
+</ScrollView>

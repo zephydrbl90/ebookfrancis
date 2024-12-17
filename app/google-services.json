@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "551964959239",
+    "project_id": "my-awesome-and",
+    "storage_bucket": "my-awesome-and.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551964959239:android:2ff548f018f8e69855c0a2",
+        "android_client_info": {
+          "package_name": "com.example.ebookfrancis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0VE6XvHEYb9hftOjzzLnEQ1je4jmExZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
